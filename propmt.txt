@@ -1,0 +1,148 @@
+**Context: Solana Security Educational Bounty – Integer Overflow/Underflow**
+
+> You are a senior Solana security engineer and technical educator.
+> Your task is to generate a **integer overflow/underflow vulnerability module** for a Solana security repository.
+> This is an **educational bounty submission**, not production code.
+> **Do not make assumptions. Follow the structure and requirements exactly.**
+
+---
+
+### 🎯 Objective
+
+Create a **`integer-overflow-underflow/` folder** that demonstrates **integer overflow/underflow caused by integer arithmetic** in Solana programs, with **side-by-side vulnerable and secure implementations**, deep explanations, and tests.
+
+Clarity, correctness, and explanation are more important than code volume.
+
+---
+
+### 📂 Required Folder Structure
+
+Generate the following structure exactly:
+
+```text
+integer-overflow-underflow/
+├── README.md
+├── anchor/
+│   ├── vulnerable/
+│   │   └── integer_division.rs
+│   ├── secure/
+│   │   └── integer_division.rs
+│   └── tests/
+│       └── precision_loss.ts
+├── pinocchio/
+│   ├── vulnerable/
+│   │   └── integer_division.rs
+│   ├── secure/
+│   │   └── integer_division.rs
+│   └── tests/
+│       └── precision_loss.rs
+```
+
+Do not add or remove folders.
+
+---
+
+### 🧠 Vulnerability Scope
+
+Focus **only** on **integer overflow/underflow**.
+
+Examples must demonstrate:
+
+* Integer overflow/underflow
+
+---
+
+### 🧪 Code Requirements (MANDATORY)
+
+For **each implementation (Anchor and Pinocchio)**:
+
+1. A **vulnerable instruction**
+
+   * Uses integer overflow/underflow incorrectly
+   * Contains **inline comments** explaining why overflow/underflow is lost
+
+2. A **secure instruction**
+
+   * Contains **inline comments** explaining the fix
+
+3. **Identical business logic**
+
+   * Only arithmetic handling differs
+
+4. **No floating point usage**
+
+---
+
+### 🧪 Tests (MANDATORY)
+
+Create tests that:
+
+* Demonstrate the exploit in the vulnerable version
+* Demonstrate the correct behavior in the secure version
+* Use small values where truncation is obvious
+* Clearly document expected vs actual outcomes
+
+Tests must fail for the vulnerable implementation and pass for the secure one.
+
+---
+
+### 📘 README.md Requirements (Deep Dive Content)
+
+The `README.md` must include:
+
+1. **High-level explanation of integer overflow/underflow**
+2. **Why this issue is dangerous in Solana**
+3. **Root cause analysis**
+4. **Annotated vulnerable code snippet**
+5. **Annotated secure code snippet**
+6. **Anchor vs Pinocchio comparison**
+7. **Security patterns and best practices**
+8. **Key takeaways for auditors and developers**
+
+Tone:
+
+* Educational
+* Clear
+* Security-focused
+* No marketing language
+
+---
+
+### ⚙️ Technical Expectations
+
+* Correct understanding of Solana’s account model
+* Proper use of Anchor constraints and checks
+* Manual safety handling in Pinocchio
+* Safe arithmetic and state mutation
+* Explicit error handling
+* No hidden assumptions
+
+---
+
+### 🧠 Judging Alignment
+
+Optimize the output for:
+
+* Accuracy of the vulnerability
+* Clarity of explanation
+* Readability of code
+* Educational usefulness
+* Clean comparison between Anchor and Pinocchio
+
+---
+
+### 🚫 Do NOT
+
+* Combine multiple vulnerabilities
+* Skip comments or explanations
+* Abstract away logic
+* Assume reviewer knowledge
+* Use unnecessary complexity
+
+---
+
+### ✅ Final Output Expectation
+
+The generated content should be **ready to submit as an educational bounty artifact** without modification.
+
+---
