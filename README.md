@@ -33,8 +33,8 @@ This approach mirrors the rigor expected in high-assurance engineering and audit
             Arithmetic and type safety vulnerabilities involve unsafe mathematical operations and improper data type conversions that can lead to incorrect calculations or program state corruption, frequently occurring in unaudited code and ranking among the most common security audit findings due to Rust's permissive default behavior and the precision requirements of financial applications.
         </em>
     </p>
-    - [Precision Loss](/tree/arithmetic-and-type-safety/precision-loss)
-    - [Integer Overflow / Underflow](/tree/arithmetic-and-type-safety/integer-overflow-underflow)
+- [Precision Loss](https://github.com/ezedike-evan/solana-programs-vulnerabilities/tree/arithmetic-and-type-safety/precision-loss)
+- [Integer Overflow / Underflow](https://github.com/ezedike-evan/solana-programs-vulnerabilities/tree/arithmetic-and-type-safety/integer-overflow-underflow)
 </details>
 
 ## How to Navigate This Repository
