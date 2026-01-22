@@ -34,7 +34,7 @@ This approach mirrors the rigor expected in high-assurance engineering and audit
         </em>
     </p>
 
-- [Precision Loss](tree/precision-loss) (branch: `arithmetic-and-type-safety`)
+- [Precision Loss](tree/precision-loss)(branch: `arithmetic-and-type-safety`)
 
 - [Integer Overflow / Underflow](https://github.com/ezedike-evan/solana-programs-vulnerabilities/tree/arithmetic-and-type-safety/integer-overflow-underflow)
 </details>
